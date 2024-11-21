@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito Compra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+
+<body>
+<div class="container-fluid">
+    <div id="header" class="row">
+        <div class="col bg-warning-subtle p-3 fs-1 fw-medium text-warning-emphasis text-center mb-2">
+            TIENDA ONLINE
+        </div>
+    </div>
+    <div class="row">
+        <div id="cards-container" class="col-9">
+            <!-- Fila 1 -->
+            <div id="cards-row" class="row g-2 mb-5">
+                <!-- Producto 1 -->
+                <div class="col-4">
+                    <div class="card h-100">
+                        <img src="https://cdn.lesnumeriques.com/optim/product/74/74146/579526c7-geforce-rtx-4070-super__450_400.webp"
+                             class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 id="name-prod-1" class="card-title">GeForce RTX 4070 Super</h4>
+                            <h5 class="card-title">$499</h5>
+                            <h6 id="cantidad-prod-1" class="card-title">CANTIDAD</h6>
+                            <button id="add-cart-prod-1" class="btn btn-primary">AÑADIR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-4">
+                    <div class="card h-100">
+                        <img src="https://multimedia.bbycastatic.ca/multimedia/products/500x500/171/17114/17114102.jpg"
+                             class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 id="name-prod-2" class="card-title">GeForce RTX 4060 Ti 8GB</h4>
+                            <h5 class="card-title">$399</h5>
+                            <h6 id="cantidad-prod-2" class="card-title">CANTIDAD</h6>
+                            <button id="add-cart-prod-2" class="btn btn-primary">AÑADIR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-4">
+                    <div class="card h-100">
+                        <img src="https://snpi.dell.com/snp/images/products/large/AC638164_mvi2.jpg"
+                             class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 id="name-prod-3" class="card-title">GeForce RTX 4060 16GB</h4>
+                            <h5 class="card-title">$340</h5>
+                            <h6 id="cantidad-prod-3" class="card-title">CANTIDAD</h6>
+                            <button id="add-cart-prod-3" class="btn btn-primary">AÑADIR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2 mb-5">
+
+                <!-- Producto 4 -->
+                <div class="col-4">
+                    <div class="card h-100">
+                        <img src="https://thumb.pccomponentes.com/w-530-530/articles/1076/10768056/5932-sapphire-pulse-amd-radeon-rx-7700-xt-gaming-12gb-gddr6-caracteristicas.jpg"
+                             class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 id="name-prod-4" class="card-title">Radeon RX 7700 XT</h4>
+                            <h5 class="card-title">$389</h5>
+                            <h6 id="cantidad-prod-4" class="card-title">CANTIDAD</h6>
+                            <button id="add-cart-prod-4" class="btn btn-primary">AÑADIR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="col-4">
+                    <div class="card h-100">
+                        <img src="https://thumb.pccomponentes.com/w-530-530/articles/1076/10767414/243-xfx-speedster-qick-319-radeon-rx-7800-xt-core-edition-16gb-gddr6-comprar.jpg"
+                             class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 id="name-prod-5" class="card-title">Radeon RX 7800 XT</h4>
+                            <h5 class="card-title">$469</h5>
+                            <h6 id="cantidad-prod-5" class="card-title">CANTIDAD</h6>
+                            <button id="add-cart-prod-5" class="btn btn-primary">AÑADIR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="col-4">
+                    <div class="card h-100">
+                        <img src="https://thumb.pccomponentes.com/w-530-530/articles/1065/10657249/6323-gigabyte-radeon-rx-7900-xtx-gaming-oc-24gb-gddr6-opiniones.jpg"
+                             class="card-img-top img-fluid h-75" alt="...">
+                        <div class="card-body">
+                            <h4 id="name-prod-6" class="card-title">Radeon RX 7900 XTX</h4>
+                            <h5 class="card-title">$839</h5>
+                            <h6 id="cantidad-prod-6" class="card-title">CANTIDAD</h6>
+                            <button id="add-cart-prod-6" class="btn btn-primary">AÑADIR AL CARRO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cart-container" class="col-3 mb-5">
+            <div class="card">
+                <h3 class="card-header bg-primary-subtle text-center p-3">
+                    CARRITO
+                </h3>
+                <ul id="prod-list" class="list-group list-group-flush list-unstyled ms-2 fs-5 fw-normal" style="min-height: 300px">
+                    <!-- Poblar la lista con JS -->
+                </ul>
+
+
+                <h4 id="total-carrito" class="clard-header bg-primary-subtle text-center p-2 mb-4">
+                    Total:
+                </h4>
+                <button id="comprar-ahora" class="btn bg-primary text-white text-center fw-medium mb-2">
+                    COMPRAR AHORA
+                </button>
+                <button id="eliminar-producto" class="btn bg-warning text-center fw-medium">
+                    ELIMINAR PRODUCTO
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+
+<script>
+    // Clase Producto
+    class Producto {
+        constructor(id, nombre, precio, idBotonAddCarro) {
+            this.id = id
+            this.nombre = nombre
+            this.precio = precio
+            this.idBotonAddCarro = idBotonAddCarro
+        }
+    }
+
+    // Crear objetos Producto
+    const productos = [
+        new Producto(1, "GeForce RTX 4070 Super", 399, "add-cart-prod-1"),
+        new Producto(2, "GeForce RTX 4060 Ti 8GB", 399, "add-cart-prod-2"),
+        new Producto(3, "GeForce RTX 4060 16GB", 450, "add-cart-prod-3"),
+        new Producto(4, "Radeon RX 7700 XT", 389, "add-cart-prod-4"),
+        new Producto(5, "Radeon RX 7800 XT", 469, "add-cart-prod-5"),
+        new Producto(6, "Radeon RX 7900 XTX", 839, "add-cart-prod-6")
+    ];
+
+    // Variable que va almacena el coste total de la compra
+    let total = 0
+
+    // Referencia a la lista donde van a aparecer nuestros productos cuando los añadamos
+    const listaCompra = document.getElementById("prod-list")
+
+    // Creamos una lista vacía donde iremos guardando o borrando los articulos en el carro
+    let listaProductos = [];
+
+    // Asignar la función de añadir producto a cada botón
+    productos.forEach((producto) => {
+        const btn = document.getElementById(producto.idBotonAddCarro);
+        btn.addEventListener("click", () => addProd(producto))
+    });
+
+
+    // Añadir producto al carrito
+    function addProd(producto) {
+        // Crear un nuevo elemento de lista
+        const nuevoItem = document.createElement("li")
+
+        // Establecer el contenido del nuevo elemento con el nombre y precio
+        nuevoItem.textContent = `${producto.nombre} - $${producto.precio}`
+
+        // Agregar el nuevo elemento a la lista existente
+        listaCompra.appendChild(nuevoItem)
+
+        // Metemos el producto en la lista
+        listaProductos.push(producto)
+
+        // Actualizamos el total
+        actualizarTotalCarrito()
+    }
+
+    // Asignamos la función eliminar producto al botón correspondiente
+    document.getElementById("eliminar-producto").addEventListener("click", eliminarProd)
+
+    // Eliminar producto del carrito
+    function eliminarProd () {
+        // Comprobamos que haya algún item en el carro
+        if (listaProductos.length > 0) {
+
+            // Seleccionamos el último item que se ha añadido a la lista
+            const ultimoItemLista = listaCompra.lastChild
+
+            // Borramos el item de la lista
+            listaCompra.removeChild(ultimoItemLista)
+
+            // Eliminamos de la lista de productos el objeto
+            listaProductos.pop()
+
+            // Actualizamos el total
+            actualizarTotalCarrito()
+        }
+    }
+
+    // Actualiza el valor del carro
+    function actualizarTotalCarrito() {
+
+        // Seleccionamos donde vamos a mostrar el total
+        const totalCarrito = document.getElementById("total-carrito")
+
+        // Ponemos el total a 0 para recalcularlo con un forEach
+        total = 0
+        if (listaProductos.length > 0) {
+            listaProductos.forEach((producto) => {
+                const precio = producto.precio
+                total += precio
+            })
+        }
+
+        // Mostramos el total en pantalla
+        totalCarrito.innerHTML = `Total: $${total}`
+    }
+
+    document.getElementById("comprar-ahora").addEventListener("click", mostrarMensajeComprar)
+
+    function mostrarMensajeComprar() {
+        let mensajeAlerta
+        if (listaProductos.length > 0) {
+            mensajeAlerta = `
+        TU COMPRA ES: ${listaProductos.length} productos
+        con un importe total de ${total}$`
+        } else {
+            mensajeAlerta = "El carro está vacío"
+        }
+        alert(mensajeAlerta)
+    }
+</script>
+
+
+</html>
