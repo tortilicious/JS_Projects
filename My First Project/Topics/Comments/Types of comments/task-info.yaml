@@ -1,0 +1,23 @@
+type: matching
+captions:
+  - // Running this code results in an error
+  - /* This code checks that the user who entered the site is already 21 years old */
+  - '&lt;!-- Checks the correctness of user data entry --&gt;'
+options:
+  - Multi-line comment
+  - Wrong comment syntax
+  - Single-line comment
+files:
+  - name: main.js
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8173#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 09 Jan 2025 13:16:31 UTC"
+record: -1
+ordering:
+  - 2
+  - 0
+  - 1
